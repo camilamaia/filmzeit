@@ -2,3 +2,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "main_frame";
+@import "welcome";
+
+
+body { 
+	background-color: black; 
+	margin: 0;
+    padding: 0;
+	text-align: center;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size: 24px;
+}
+
+.content {
+	margin: auto;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
