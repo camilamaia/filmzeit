@@ -1,0 +1,28 @@
+<h1>Film Zeit</h1>
+
+<%= link_to "Give me another movie!", url_for(params) %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @film.name %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%=@film.description %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @film.rate %>
+</p>
+ 
+<p>
+  <strong>Duration:</strong>
+  <%= @film.duration %>
+</p>
+
+<%= link_to "See all", films_path %>
+<%= link_to 'New Film', new_film_path %>
+
+

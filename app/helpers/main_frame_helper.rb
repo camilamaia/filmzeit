@@ -1,0 +1,2 @@
+module MainFrameHelper
+end

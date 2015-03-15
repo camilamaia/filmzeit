@@ -43,10 +43,6 @@ class FilmsController < ApplicationController
     redirect_to films_path
   end
 
-  def random
-    Film.offset(rand(Film.count)).first
-  end
-
   private
     def film_params
       params.require(:film).permit(:name, :description, :rate, :duration)
