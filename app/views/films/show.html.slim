@@ -1,0 +1,19 @@
+p
+  strong Name:
+  = @film.name
+
+p
+  strong Description:
+  = @film.description
+
+p
+  strong Rate:
+  = @film.rate
+
+p
+  strong Duration:
+  = @film.duration
+
+
+= link_to 'Back', films_path
+= link_to 'Edit', edit_film_path(@film)
