@@ -23,6 +23,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem "better_errors", "~> 2.1.1"
+  gem "binding_of_caller"
+end
+
 group :production do
   gem 'rails_12factor'
 end
