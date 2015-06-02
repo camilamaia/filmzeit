@@ -1,24 +1,25 @@
 = image_tag "logo.jpg"
 
-= link_to "Give me another movie!", url_for(params)
+.content
+  = link_to "Give me another movie!", url_for(params), class: "g-m-m"
 
-p
-  strong Name:
-  = @film.name
+  p
+    strong Name:
+    = @film.name
 
-p
-  strong Description:
-  = @film.description
+  p
+    strong Description:
+    = @film.description
 
-p
-  strong Rate:
-  = @film.rate
+  p
+    strong Rate:
+    = @film.rate
 
-p
-  strong Duration:
-  = @film.duration
+  p
+    strong Duration:
+    = @film.duration
 
-= link_to "See all", films_path
-= link_to "New Film", new_film_path
+  = link_to "See all", films_path
+  = link_to "New Film", new_film_path
 
 

@@ -8,7 +8,8 @@ gem 'pg', '~>0.18.1'
 gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem "slim-rails", "~> 3.0.1"
+gem 'simple_form', '~> 3.1.0'
+gem "slim-rails", '~> 3.0.1'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 

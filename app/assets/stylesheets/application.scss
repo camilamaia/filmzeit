@@ -11,6 +11,22 @@ body {
 	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 	font-size: 24px;
 	color: #FF9999;
+  padding: 10px;
+
+  a {
+    color: #FFF;
+    padding: 2%;
+  }
+
+  table {
+    width: 100%;
+    text-align: left;
+
+    tbody {
+      color: #FFF;
+    }
+  }
+
 }
 
 

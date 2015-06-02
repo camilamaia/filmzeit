@@ -1,19 +1,14 @@
-= form_for :film, url: films_path do |f|
-  p
-    = f.label :name
-    = f.text_field :name
+= simple_form_for @film, html: { class: 'form-horizontal' },
+  wrapper: :horizontal_form do |f|
 
-  p
-    = f.label :description
-    = f.text_area :description
+  = f.error_notification
 
-  p
-    = f.label :rate
-    = f.text_field :rate
+  = f.input :name
 
-  p
-    = f.label :duration
-    = f.text_field :duration
+  = f.input :description, as: :text
 
-  p
-    = f.submit
+  = f.input :rate, as: :float
+
+  = f.input :duration, as: :integer
+
+  = f.button :submit, class: 'btn btn-primary'
