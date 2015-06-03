@@ -27,6 +27,10 @@ body {
     }
   }
 
+  .table-hover tbody tr:hover td {
+    background: #FF9999;
+  }
+
 }
 
 
