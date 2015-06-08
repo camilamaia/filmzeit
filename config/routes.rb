@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'main_frame/index'
+  get 'home/index'
 
   get 'welcome/index'
 
