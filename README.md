@@ -12,7 +12,7 @@ https://boiling-waters-2394.herokuapp.com
 $ git push heroku master
 ```
 
-or, for a specif branch:
+or, for a specific branch:
 
 ```
 $ git push heroku yourbranch:master
