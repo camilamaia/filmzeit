@@ -3,12 +3,12 @@
 
   = f.error_notification
 
-  = f.input :name
+  = f.input :title, as: :string
 
-  = f.input :description, as: :text
+  = f.input :plot, label: 'Duration', as: :text
 
-  = f.input :rate, as: :float
+  = f.input :imdb_rating, as: :string
 
-  = f.input :duration, as: :integer
+  = f.input :runtime, as: :string
 
   = f.button :submit, class: 'btn btn-primary'

@@ -1,15 +1,17 @@
 source 'https://rubygems.org'
 
+gem 'awesome_print', '~> 1.6.1'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem 'omdbapi', '~> 0.2.1'
 gem 'pg', '~>0.18.1'
 gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 3.1.0'
-gem "slim-rails", '~> 3.0.1'
+gem 'slim-rails', '~> 3.0.1'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 

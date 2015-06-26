@@ -1,18 +1,18 @@
 p
-  strong Name:
-  = @film.name
+  strong Title:
+  = @film.title
 
 p
   strong Description:
-  = @film.description
+  = @film.plot
 
 p
-  strong Rate:
-  = @film.rate
+  strong IMDB Rate:
+  = @film.imdb_rating
 
 p
-  strong Duration:
-  = @film.duration
+  strong Runtime:
+  = @film.runtime
 
 
 = link_to 'Back', films_path

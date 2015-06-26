@@ -3,17 +3,17 @@ h1 Films
 .table-responsive
   table class="table-hover"
     thead
-      th Name
-      th Rate
-      th Duration
+      th Title
+      th IMDB Rate
+      th Runtime
       th colspan="2"
 
     tbody
       - @films.each do |film|
         tr
-          td = film.name
-          td = film.rate
-          td = film.duration
+          td = film.title
+          td = film.imdb_rating
+          td = film.runtime
           td = link_to 'More info', film_path(film)
           td = link_to 'Edit', edit_film_path(film)
           td = link_to 'Remove', film_path(film),
