@@ -17,7 +17,9 @@ class FilmsController < ApplicationController
   end
 
   def create
-    @film = Film.new(film_params)
+    imdb_params            = OMDB.title(film_params[:title])
+    imdb_params[:category] = imdb_params.delete :type
+    @film = Film.new(imdb_params)
 
     @film.save ? redirect_to(@film) : render('new')
   end

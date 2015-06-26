@@ -1,6 +1,13 @@
 h1 Neu Film
 
 .container
-  = render 'form'
+  = simple_form_for @film, html: { class: 'form-horizontal' },
+  wrapper: :horizontal_form do |f|
+
+    = f.error_notification
+
+    = f.input :title, as: :string
+
+    = f.button :submit, class: 'btn btn-primary'
 
   = link_to :back, films_path, class: 'btn btn-danger'
